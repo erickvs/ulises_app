@@ -1,11 +1,17 @@
 <div class="masthead clearfix">
   <div class="inner">
-    <h3 class="masthead-brand">Cover</h3>
+    
     <nav>
       <ul class="nav masthead-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><%= active_link_to 'Home', root_path %></li>
+        <li><%= active_link_to 'Videos', videos_path %></li>
+        <li>
+        	<h3 class="masthead-brand">
+        		<span class="glyphicon glyphicon-tent" aria-hidden="true"></span>
+        	</h3>
+        </li>
+        <li><%= active_link_to 'Articles', articles_path %></li>
+        <li><%= active_link_to 'Blog', blog_path %></li>
       </ul>
     </nav>
   </div>
